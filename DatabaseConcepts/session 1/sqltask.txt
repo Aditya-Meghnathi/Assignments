@@ -1,0 +1,83 @@
+/*CREATE TABLE Profile
+(ProfileId int,
+FirstName Varchar(255),
+LastName Varchar(255),
+UserName Char(10)
+);*/
+
+/*SELECT * from Profile;*/
+
+/*INSERT INTO Profile VALUES ( 1, 'Aditya', 'Meghnathi', 'adim' );
+INSERT INTO Profile VALUES ( 2, 'Jay', 'Virsodiya', 'jayv' );
+INSERT INTO Profile VALUES ( 3, 'Priyank', 'Kotak', 'prik' );
+INSERT INTO Profile VALUES ( 4, 'Bhargav', 'Baldev', 'bhab' );
+INSERT INTO Profile VALUES ( 5, 'Yash', 'Gotecha', 'yashg' );
+INSERT INTO Profile VALUES ( 6, 'Yash', 'Maheta', 'yashm');*/
+
+/*UPDATE Profile
+SET UserName = 'adim'
+WHERE ProfileId = 6;*/
+
+/*UPDATE Profile
+SET UserName = 'adim', FirstName = 'Aditya'
+WHERE ProfileId = 5;*/
+
+/*CREATE TABLE City(IndividualId int,City Varchar(255));*/
+
+/*INSERT INTO City VALUES(1,'talala');
+DROP TABLE City;*/
+
+/*CREATE TABLE City(ProfileID int,City Varchar(255));*/
+
+/*INSERT INTO City VALUES(1,'talala');
+INSERT INTO City VALUES(2,'rajkot');
+INSERT INTO City VALUES(3,'rajkot');
+INSERT INTO City VALUES(8,'ahmedabad');*/
+
+/*SELECT * FROM Profile
+INNER JOIN City
+ON Profile.ProfileID = City.ProfileID;*/
+
+/*SELECT * FROM Profile
+LEFT JOIN City
+ON Profile.ProfileID = City.ProfileID;*/
+
+/*SELECT * FROM Profile
+RIGHT JOIN City
+ON Profile.ProfileID = City.ProfileID;*/
+
+/*SELECT * FROM Profile
+FULL JOIN City
+ON Profile.ProfileID = City.ProfileID;*/
+
+/*SELECT * FROM Profile
+WHERE FirstName = 'Aditya';*/
+
+/*SELECT * FROM Profile
+WHERE FirstName = 'Aditya'
+AND LastName = 'Meghnathi';*/
+
+/*SELECT * FROM Profile
+ORDER BY LastName;*/
+
+/*SELECT * FROM Profile
+ORDER BY LastName DESC;*/
+
+/*SELECT * FROM Profile
+ORDER BY FirstName, UserName;*/
+
+/*SELECT TOP 2 * FROM Profile;*/
+
+/*SELECT TOP 30 PERCENT * FROM Profile
+ORDER BY FirstName DESC;*/
+
+/*SELECT DISTINCT(FirstName) FROM Profile;*/
+
+/*SELECT * FROM Profile
+WHERE FirstName IN ('Aditya','Jay');*/
+
+/*SELECT UserName FROM Profile
+WHERE ProfileId IN
+(SELECT ProfileId
+FROM City
+WHERE City = 'talala');*/
