@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<HTML>
+	<style>
+		body {
+			
+			border-style: double;
+		    border-width: thick;
+			border-color: rgb(0,0,0);
+			padding-top: 30px;
+  			padding-right: 30px;
+  			padding-bottom: 30px;
+  			padding-left: 30px;
+
+		}
+		input[type=text]{
+			  color: crimson;
+			}
+		legend{
+			color: rgb(0, 0, 0);
+		}
+		label ,h3 ,th{
+			color: rgb(150, 42, 0);
+		}
+		button {
+			color: rgb(0,0,0);
+			border-color: rgb(0,0,0);
+			padding: 5px 5px 5px 5px;
+			margin: 5px 5px 5px 5px;
+		}
+		fieldset{
+			border-color: rgb(0,0,0);
+			
+		}
+		i{
+			color: rgb(0, 0, 0);
+		}
+		body{
+			background-image: url('new6.jpg');
+			background-size: cover;
+		}
+
+			  
+	</style>
+<HEAD>
+	<TITLE>SIGNUP PAGE</TITLE>
+	
+</HEAD>
+<BODY>
+	<form>
+		<fieldset>
+			<legend>basic information</legend>
+
+				<label  for="Firstname"><b>Firstname</b></label>
+				<input type="text" placeholder="Enter Firstname" name="firstname" required><br><br>
+		
+				<label  for="Lastname"><b>Lastname</b></label>
+				<input type="text" placeholder="Enter Lastname" name="lastname" required><br><br>
+		
+				<label  for="Email id"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email id" name="email" required><br><br>
+		
+				<label  for="Create Password"><b>Create New Password</b></label>
+				<input type="text" placeholder="Create new Password" name="password" required><br><br>
+		
+				<label  for="Re enter Password"><b>Re Enter New Password</b></label>
+				<input type="text" placeholder="Re Enter New Password" name="password" required><br><br>
+		
+				<label for="Birthdate"><b>Birthdate</b></label>
+				<input type="date" name="bday"><br><br>
+
+				<label  for="Gender"><b>Gender</b></label>
+				<input type="radio" name="gender" value="male" checked> Male
+				<input type="radio" name="gender" value="female"> Female
+				<input type="radio" name="gender" value="other"> Other  <br><br>
+
+				<label  for="Language"><b>Language Known</b></label>
+				<input type="radio" name="Language" value="Gujarati" checked> Gujarati
+				<input type="radio" name="Language" value="Hindi"> Hindi
+				<input type="radio" name="Language" value="English"> English  <br><br>
+
+				<p>
+					<label><b>Select city</b></label>
+					<select id = "myList">
+					  <option value = "Ahmedabad">Ahmedabad</option>
+					  <option value = "Nadiad">Nadiad</option>
+					  <option value = "Talala-gir">Talala-gir</option>
+					  <option value = "Rajkot">Rajkot</option>
+					</select>
+				</p>
+				
+
+				
+
+		</fieldset>
+		
+		<fieldset>
+			<legend>Favourites</legend>
+			<p>
+			<label><b>Food</b></label>
+				<input type = "checkbox" id = "Dabeli" value = "Dabeli" />
+				<label for = "Dabeli"><i>Dabeli</i></label>
+				<input type = "checkbox" id = "Pizza" value = "Pizza" />
+				<label for = "Pizza"><i>Pizza</i></label>
+				<input type = "checkbox" id = "Panipuri" value = "Panipuri" />
+				<label for = "Dabeli"><i>Panipuri</i></label>
+				<input type = "checkbox" id = "ice cream" value = "ice cream" />
+				<label for = "ice cream"><i>ice cream</i></label>
+			</p>
+			<p>
+				<label><b>color</b></label>
+					<input type = "checkbox" id = "Red" value = "Red" />
+					<label for = "Red"><i>Red</i></label>
+					<input type = "checkbox" id = "Pink" value = "Pink" />
+					<label for = "Pink"><i>Pink</i></label>
+					<input type = "checkbox" id = "Green" value = "Green" />
+					<label for = "Green"><i>Green</i></label>
+					<input type = "checkbox" id = "Black" value = "Black" />
+					<label for = "Black"><i>Black</i></label>
+			</p>
+			<p>
+				<label><b>Movie</b></label>
+					<input type = "checkbox" id = "KGF" value = "KGF" />
+					<label for = "KGF"><i>KGF</i></label>
+					<input type = "checkbox" id = "Saaho" value = "Saaho" />
+					<label for = "Saaho"><i>Saaho</i></label>
+					<input type = "checkbox" id = "Good News" value = "Good News" />
+					<label for = "Good News"><i>Good News</i></label>
+					<input type = "checkbox" id = "Black panther" value = "Black panther" />
+					<label for = "Black panther"><i>Black panther</i></label>
+			</p>
+		</fieldset>
+
+		<fieldset>
+			<legend>Skill</legend>
+			<p>
+				<label><b>Technical</b></label>
+					<input type = "checkbox" id = "C" value = "C" />
+					<label for = "C"><i>C</i></label>
+					<input type = "checkbox" id = "Java" value = "Java" />
+					<label for = "Java"><i>Java</i></label>
+					<input type = "checkbox" id = "C++" value = "C++" />
+					<label for = "C++"><i>C++</i></label>
+					<input type = "checkbox" id = "Python" value = "Python" />
+					<label for = "Python"><i>Python</i></label>
+			</p>
+			<p>
+			<label><b>Sports</b></label>
+					<input type = "checkbox" id = "Cricket" value = "Cricket" />
+					<label for = "Cricket"><i>Cricket</i></label>
+					<input type = "checkbox" id = "football" value = "football" />
+					<label for = "football"><i>football</i></label>
+					<input type = "checkbox" id = "kabadi" value = "kabadi" />
+					<label for = "kabadi"><i>kabadi</i></label>
+					<input type = "checkbox" id = "other" value = "other" />
+					<label for = "other"><i>other</i></label>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Educational details</legend>
+			<table>
+				<tr>
+				  <th>10th</th>
+				  <th>12th</th>
+				  <th>Degree</th>
+				</tr>
+				<tr>
+				  <td>
+					  <input type="number" placeholder="Percentage" required>
+				  </td>
+				  <td>
+					<input type="number" placeholder="Percentage" required>
+				  </td>
+				  <td>
+					<input type="number" placeholder="Percentage" required>
+				  </td>
+				</tr>
+				<tr>
+				  <td>
+					<input type="text" placeholder="school" required>
+				  </td>
+				  <td>
+					<input type="text" placeholder="school" required>
+				  </td>
+				  <td>
+					<input type="text" placeholder="collage" required>
+				  </td>
+				</tr>
+				<tr>
+				  <td>
+					<input type="text" placeholder="Board" required>
+				  </td>
+				  <td>
+					<input type="text" placeholder="Board" required>
+				  </td>
+				  <td>
+					<input type="text" placeholder="University" required>
+				  </td>
+				</tr>
+			  </table>
+			</fieldset>
+			<fieldset>
+				<legend>Reference</legend>
+				<h3>site you prefer the most</h3>
+				<ul>
+					<li><a href="https://www.w3schools.com/">w3schools</a></li>
+					<li><a href="https://www.tutorialspoint.com/">tutorialspoint</a></li>
+					<li><a href="https://www.javatpoint.com/">javatpoint</a></li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<button type="button" onclick="alert('Hellooooo')">Submit</button>
+			</fieldset>
+	</form>
+</BODY>
+</HTML>
