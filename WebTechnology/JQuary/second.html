@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Quiz app</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type='text/javascript' src='jquery-3.2.1.min.js'></script>
+        <script type='text/javascript' src='secondjs.js'></script>
+        <link rel="stylesheet" type="text/css" href="secondcss.css"></link>
+    </head>
+    <body>
+        <div id='main'>
+            
+            <div id='First'>
+                <br>
+                <h2>Check Your IPL Cricket Knowledge Here!!!</h2>
+                <div class='start'>
+                    <button name='start'>Start</button>
+                </div>
+            </div>
+            <div class='question'>
+                <p>[Q-1]Who is the first player to win 100 matches as a captain in IPL?</p>
+                <form>
+                    <input name='options' type='radio'><i><span>Gautam Gambhir</span></i></input><br><br>
+                    <input name='options' type='radio'><i><span>Rohit Sharma</span></i></input><br><br>
+                    <input name='options' type='radio' value = 1><i><span>M S Dhoni</span></i></input><br><br>
+                    <input name='options' type='radio'><i><span>Virat Kohli</span></i></input><br><br>
+                </form>
+            </div>
+            <div class='question'>
+                <p>[Q-2] Who was RCB first captain?</p>
+                <form>
+                    <input name='options' type='radio' value = 1><i><span>Rahul Dravid</span></i></input><br><br>
+                    <input name='options' type='radio'><i><span>Virat Kohli</span></i></input><br><br>
+                    <input name='options' type='radio'><i><span>Anil Kumble</span></i></input><br><br>
+                    <input name='options' type='radio' ><i><span>AB De Villiers</span></i></input><br><br>
+                </form>
+            </div>
+            <div class='question'>
+                <p>[Q-3]Who won Orange cap in 2019?</p>
+                <form>
+                    <input name='options' type='radio'><i><span>Kane Williamson</span></i></input><br><br>
+                    <input name='options' type='radio'><i><span>Rohit Sharma</span></i></input><br><br>
+                    <input name='options' type='radio' value =1><i><span>David Warner</span></i></input><br><br>
+                    <input name='options' type='radio'><i><span>Suresh Raina</span></i></input><br><br>
+                </form>
+            </div>
+            <div class='question'>
+                <p>[Q-4]Who hits the fastest fifty in IPL?</p>
+                <form>
+                    <input name='options' type='radio'><i><span>Suresh Raina</span></i></input><br><br>
+                    <input name='options' type='radio' value = 1><i><span>KL Rahul</span></i></input><br><br>
+                    <input name='options' type='radio'><i><span>Yuvraj Sinh</span></i></input><br><br>
+                    <input name='options' type='radio'><i><span>Chris Gayle</span></i></input><br><br>
+                </form>
+            </div>
+            <div class='question'>
+                <p>[Q-5] Who is called Mr IPL?</p>
+                <form>
+                    <input name='options' type='radio'><i><span>Chris Gayle</span></i></input><br><br>
+                    <input name='options' type='radio'><i><span>MS Dhoni</span></i></input><br><br>
+                    <input name='options' type='radio'><i><span>Virat Kohli</span></i></input><br><br>
+                    <input name='options' type='radio' value = 1><i><span>Suresh Raina</span></i></input><br><br>
+                </form>
+            </div><br>
+            <div id='click'>
+                <button id='prev'>Previous</button>
+                <button id='next'>Next</button>
+                <button id='submit'>Submit</button>
+            </div>
+            <div id='Score'>
+                <h4> YOUR RESULT IS:</h4>
+                <p id='score'></p><br>
+                <button id='restart'>Restart</button>
+            </div>
+        </div>
+    </body>
+</html>
